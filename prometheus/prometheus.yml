@@ -2,6 +2,6 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: "videostream"
+  - job_name: 'web'
     static_configs:
-      - targets: ["app:8000"]  # Обращается к контейнеру "app"
+      - targets: ['web:8000']
